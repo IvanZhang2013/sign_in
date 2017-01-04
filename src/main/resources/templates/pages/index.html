@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8" />
+<title>签到</title>
+<link rel="stylesheet" type="text/css" href="/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="/themes/icon.css" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/pages/js/index.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #d45a5a;
+}
+.STYLE1 {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.STYLE2 {
+	color: #000000;
+	font-size: 16px;
+}
+-->
+</style></head>
+
+<body>
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="150">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <form id="form1" name="form1" method="post" action="dytxht.asp">
+        <table width="500" border="0" cellspacing="10" cellpadding="0">
+          <tr>
+            <td align="center"><span class="STYLE1">客户签到</span></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">
+               <span class="STYLE1">&nbsp;&nbsp;&nbsp;&nbsp;验证码：</span>
+               <input class="easyui-textbox" id="signCode" />
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">
+               <span class="STYLE1">客户姓名：</span>
+                 <input class="easyui-textbox" id="custName" />
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">
+               <span class="STYLE1">应签人数：</span>
+                 <input class="easyui-textbox" id="planNum" />
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">
+               <span class="STYLE1">已签人数：</span>
+                <input class="easyui-textbox" id="actualNum" />
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">
+               <span class="STYLE1">签到人数：</span>
+               <input class="easyui-textbox" id="qiandaoNum" />
+              </div> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="center">
+                <a href="javascript:void(0)" class="easyui-linkbutton" style ="width:60px;" onclick="javascript:query()"> 查&nbsp;&nbsp;询</a>
+				&nbsp;&nbsp;&nbsp;&nbsp; 
+				<a href="javascript:void(0)" class="easyui-linkbutton" style ="width:60px;" onclick="javascript:update()"> 签&nbsp;&nbsp;到</a>
+                </div>
+            </td>
+          </tr>
+        </table>
+        </form>
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>

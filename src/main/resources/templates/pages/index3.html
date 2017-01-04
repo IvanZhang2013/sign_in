@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>签到页面</title>
+<link rel="stylesheet" type="text/css" href="/themes/bootstrap/easyui.css" />
+<link rel="stylesheet" type="text/css" href="/themes/icon.css" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/pages/js/index.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+.STYLE1 {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.STYLE2 {
+	color: #000000;
+	font-size: 16px;
+}
+-->
+</style>
+</head>
+<body>
+	<form id="ff" method="post">
+		<div style="text-align: center;">
+			<label for="signCode">&nbsp;&nbsp;&nbsp;验证码:</label> <input class="easyui-textbox" id="signCode" />
+		</div>
+		<div style="text-align: center;">
+			<label for="custName">客户姓名:</label> <input class="easyui-textbox" id="custName" />
+		</div>
+		<div style="text-align: center;">
+			<label for="planNum">应签人数:</label> <input class="easyui-textbox" id="planNum" />
+		</div>
+		<div style="text-align: center;">
+			<label for="actualNum">已签人数:</label> <input class="easyui-textbox" id="actualNum" />
+		</div>
+		<div style="text-align: center;">
+			<label for="qiandaoNum">签到人数:</label> <input class="easyui-textbox" id="qiandaoNum" />
+		</div>
+
+		<div style="text-align: center;">
+			<a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:query()"> 查询</a>
+			&nbsp;&nbsp;&nbsp;&nbsp; 
+			<a href="javascript:void(0)" class="easyui-linkbutton" onclick="javascript:update()"> 签到</a>
+		</div>
+	</form>
+</body>
+</html>
